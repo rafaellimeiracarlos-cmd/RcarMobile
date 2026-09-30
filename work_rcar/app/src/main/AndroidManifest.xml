@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Rcarpremium"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rcarpremium"
+>
+        <activity
+            android:name=".MainActivityDadosCadastrais"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityEnderecosEntrega"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityHome"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityPagamento"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityVerProdutos"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityItemCarrinho"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivitycomprasonline"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 2. OUTRAS TELAS DO APP SECUNDÁRIAS (FECHADAS CORRETAMENTE COM />) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityCadastro"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityEsqueceuSenha"
+            android:exported="false" />
+        <activity android:name=".MainActivityAcessoInterno" android:exported="false" />
+        <activity android:name=".MainActivityPainelInterno" android:exported="false" />
+        <activity android:name=".MainActivityCategorias" android:exported="false" />
+        <activity android:name=".MainActivityPedidos" android:exported="false" />
+        <activity android:name=".MainActivityListaProdutos" android:exported="false" />
+        <activity android:name=".MainActivitySuporte" android:exported="false" />
+        <activity android:name=".MainActivityConfiguracoes" android:exported="false" />
+        <activity android:name=".MainActivityTermos" android:exported="false" />
+        <activity android:name=".MainActivitySobre" android:exported="false" />
+        <activity android:name=".MainActivityCadastroProduto" android:exported="false" />
+        <activity android:name=".MainActivityClientes" android:exported="false" />
+        <activity android:name=".MainActivityVendas" android:exported="false" />
+        <activity android:name=".MainActivityEstoque" android:exported="false" />
+        <activity android:name=".MainActivityRelatorios" android:exported="false" />
+    </application>
+
+</manifest>

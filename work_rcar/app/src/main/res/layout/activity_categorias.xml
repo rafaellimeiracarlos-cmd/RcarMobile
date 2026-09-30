@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#0D0D0D">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="64dp" android:gravity="center_vertical" android:paddingHorizontal="16dp">
+        <TextView android:id="@+id/btnVoltarCategorias" android:layout_width="45dp" android:layout_height="match_parent" android:gravity="center" android:text="‹" android:textColor="#FFFFFF" android:textSize="32sp" android:clickable="true"/>
+        <ImageView android:layout_width="115dp" android:layout_height="50dp" android:src="@drawable/imglogo" android:contentDescription="RCAR Premium"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="right" android:text="Categorias" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold"/>
+    </LinearLayout>
+    <EditText android:layout_width="match_parent" android:layout_height="48dp" android:layout_margin="14dp" android:background="@drawable/fundo_barra_busca" android:hint="Buscar categoria..." android:paddingHorizontal="16dp" android:textColor="#FFFFFF" android:textColorHint="#777777"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"><LinearLayout android:id="@+id/listaCategorias" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp"/></ScrollView>
+    <include layout="@layout/bottom_nav"/>
+</LinearLayout>

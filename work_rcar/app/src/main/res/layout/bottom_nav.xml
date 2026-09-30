@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="64dp"
+    android:orientation="horizontal" android:gravity="center"
+    android:background="#111111" android:elevation="12dp">
+    <TextView android:id="@+id/navInicio" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:text="⌂\nInício" android:textColor="#FFFFFF" android:textSize="11sp" android:clickable="true" android:focusable="true"/>
+    <TextView android:id="@+id/navCategorias" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:text="▦\nCategorias" android:textColor="#FFFFFF" android:textSize="11sp" android:clickable="true" android:focusable="true"/>
+    <TextView android:id="@+id/navCarrinho" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:text="🛒\nCarrinho" android:textColor="#FFFFFF" android:textSize="11sp" android:clickable="true" android:focusable="true"/>
+    <TextView android:id="@+id/navPedidos" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:text="▤\nPedidos" android:textColor="#FFFFFF" android:textSize="11sp" android:clickable="true" android:focusable="true"/>
+    <TextView android:id="@+id/navPerfil" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:text="♙\nPerfil" android:textColor="#FFFFFF" android:textSize="11sp" android:clickable="true" android:focusable="true"/>
+</LinearLayout>

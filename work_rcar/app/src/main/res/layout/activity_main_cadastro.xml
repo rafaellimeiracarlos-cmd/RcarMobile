@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D1B1B"
+    android:backgroundTint="#2A2929"
+    tools:context=".MainActivityCadastro">
+
+    <!-- TÍTULO DA TELA -->
+
+    <!-- CAMPO: NOME COMPLETO -->
+
+    <TextView
+        android:id="@+id/textTituloCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#D38686"
+        android:text="@string/criar_nova_conta"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+    <EditText
+        android:id="@+id/editNomeCadastro"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:autofillHints="name"
+        android:background="@android:color/white"
+        android:hint="@string/nome_completo"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="16dp"
+        android:textColor="#222222"
+        android:textColorHint="#888888"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTituloCadastro" />
+
+    <!-- CAMPO: E-MAIL -->
+    <EditText
+        android:id="@+id/editEmailCadastro"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="emailAddress"
+        android:background="@android:color/white"
+        android:hint="@string/E_mail"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="16dp"
+        android:textColor="#222222"
+        android:textColorHint="#888888"
+        app:layout_constraintEnd_toEndOf="@+id/editNomeCadastro"
+        app:layout_constraintStart_toStartOf="@+id/editNomeCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/editNomeCadastro" />
+
+    <!-- CAMPO: SENHA -->
+
+    <!-- BOTÃO: CONCLUIR CADASTRO -->
+
+    <!-- VOLTAR PARA O LOGIN -->
+    <EditText
+        android:id="@+id/editSenhaCadastro"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints="password"
+        android:background="@android:color/white"
+        android:hint="@string/Senha"
+        android:inputType="textPassword"
+        android:paddingHorizontal="16dp"
+        android:textColor="#222222"
+        android:textColorHint="#888888"
+        app:layout_constraintEnd_toEndOf="@+id/editEmailCadastro"
+        app:layout_constraintStart_toStartOf="@+id/editEmailCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/editEmailCadastro" />
+
+    <Button
+        android:id="@+id/btnFinalizarCadastro"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#100F0E"
+        android:text="@string/cadastrar"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/editSenhaCadastro"
+        app:layout_constraintStart_toStartOf="@+id/editSenhaCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/editSenhaCadastro" />
+
+    <TextView
+        android:id="@+id/textVoltarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/j_tem_uma_conta_fa_a_login"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFinalizarCadastro" />
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="198dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@drawable/imglogo"
+        android:clickable="true"
+        android:focusable="true"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
