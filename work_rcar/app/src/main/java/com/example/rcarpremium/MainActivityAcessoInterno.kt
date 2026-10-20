@@ -30,7 +30,7 @@ class MainActivityAcessoInterno : AppCompatActivity() {
         btnEntrar.setOnClickListener {
             val u = usuario.text.toString().trim()
             val s = senha.text.toString().trim()
-            val usuarioEsperado = if (isCeo) "ceo" else "funcionario"
+            val usuarioEsperado = if (isCeo) "ceo@gmail.com" else "funcionario@gmail.com"
             val senhaEsperada = "1234"
 
             if (u.isEmpty()) {

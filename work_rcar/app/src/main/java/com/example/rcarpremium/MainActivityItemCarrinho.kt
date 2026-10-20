@@ -19,7 +19,7 @@ class MainActivityItemCarrinho : AppCompatActivity() {
         setContentView(R.layout.activity_main_item_carrinho)
 
         // 1. MAPEIA OS ELEMENTOS DA INTERFACE
-        val imgVoltarOuLogo = findViewById<ImageView>(R.id.imgVoltar)
+        val imgVoltarOuLogo = findViewById<ImageView>(R.id.BottomVolt)
         txtValorTotal = findViewById(R.id.txtValorTotal)
         val btnFinalizarCompra = findViewById<Button>(R.id.btnFinalizarCompra)
         val recyclerCarrinho = findViewById<RecyclerView>(R.id.recyclerCarrinho)
